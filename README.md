@@ -166,3 +166,4 @@ Note: We have added some `mock` objects to make it easier for you in [mocksExamp
 If you have issues with the Action Item, you can get help and feedback in the [Community](https://community.theseniordev.com/) or, in the [Weekly Calls](https://calendar.google.com/calendar/u/0?cid=Y19kbGVoajU1Z2prNXZmYmdoYmxtdDRvN3JyNEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t).
 
 ### Made with :orange_heart: in Berlin by @TheSeniorDev
+Ricardo Kreyhsig
