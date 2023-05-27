@@ -1,7 +1,7 @@
 module.exports = {
   "preset": "ts-jest/presets/js-with-ts",
   "testEnvironment": "jest-environment-node",  
-  "moduleFileExtensions": ['js', 'jsx', 'ts', 'tsx', 'json', 'node',"d.ts"],
+  "moduleFileExtensions": ['js', 'ts', 'json', 'node',"d.ts"],
   "verbose": true,
   "collectCoverage":true,
   "collectCoverageFrom": [
