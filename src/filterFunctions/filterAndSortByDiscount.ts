@@ -9,5 +9,10 @@ import { Product } from "../types";
  * @returns {Product[]} the list of filtered products
  */
 export default function filterAndSortByDiscount(productList:Product[]):Product[]{
-    return productList
+    console.log('----')
+    const filteredList = productList.filter(product => product.discount.isEnabled === true);
+    console.log(productList)
+    console.log('----')
+    console.log(filteredList)
+    return filteredList;
 }
