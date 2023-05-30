@@ -78,40 +78,40 @@ describe("Filter and sort by discount", () => {
     });
   });
 
-  // describe("When the product list has different products with discount", () => {
-  //   const prodWithDiscount: Product = {
-  //     id: "test-product-with-discount",
-  //     name: "Shoes",
-  //     net_price: 20,
-  //     discount: {
-  //       isEnabled: true,
-  //       percentage: 10,
-  //     },
-  //     brand: testBrand,
-  //     type: ProductType.FOOD,
-  //   };
+  describe("When the product list has different products with discount", () => {
+    const prodWithDiscount: Product = {
+      id: "test-product-with-discount",
+      name: "Shoes",
+      net_price: 20,
+      discount: {
+        isEnabled: true,
+        percentage: 10,
+      },
+      brand: testBrand,
+      type: ProductType.FOOD,
+    };
 
-  //   const anotherProdWithDiscount: Product = {
-  //     id: "test-product-with-discount",
-  //     name: "Bag",
-  //     net_price: 10,
-  //     discount: {
-  //       isEnabled: true,
-  //       percentage: 5,
-  //     },
-  //     brand: testBrand,
-  //     type: ProductType.FOOD,
-  //   };
+    const anotherProdWithDiscount: Product = {
+      id: "test-product-with-discount",
+      name: "Bag",
+      net_price: 10,
+      discount: {
+        isEnabled: true,
+        percentage: 5,
+      },
+      brand: testBrand,
+      type: ProductType.FOOD,
+    };
 
-  //   it("returns the discounted products in the correct order", () => {
-  //     // ACT
-  //     const productList = filterAndSortByDiscount([
-  //       prodWithDiscount,
-  //       anotherProdWithDiscount,
-  //     ]);
+    it("returns the discounted products in the correct order", () => {
+      // ACT
+      const productList = filterAndSortByDiscount([
+        prodWithDiscount,
+        anotherProdWithDiscount,
+      ]);
 
-  //     // ASSERT
-  //     expect(productList).toEqual([anotherProdWithDiscount, prodWithDiscount]);
-  //   });
-  // });
+      // ASSERT
+      expect(productList).toEqual([anotherProdWithDiscount, prodWithDiscount]);
+    });
+  });
 });

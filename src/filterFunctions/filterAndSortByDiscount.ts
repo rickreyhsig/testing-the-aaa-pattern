@@ -9,10 +9,11 @@ import { Product } from "../types";
  * @returns {Product[]} the list of filtered products
  */
 export default function filterAndSortByDiscount(productList:Product[]):Product[]{
-    console.log('----')
     const filteredList = productList.filter(product => product.discount.isEnabled === true);
-    console.log(productList)
-    console.log('----')
-    console.log(filteredList)
-    return filteredList;
+    const sortedList = filteredList.sort((a, b) => {
+        const netDiscountA = a.net_price * (100 - a.discount.percentage) / 100;
+        const netDiscountB = b.net_price * (100 - b.discount.percentage) / 100;
+        return netDiscountA - netDiscountB;
+    });
+    return sortedList;
 }
