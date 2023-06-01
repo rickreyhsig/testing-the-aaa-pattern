@@ -4,6 +4,7 @@ import calculatePriceAfterDiscount from "./calculatePriceAfterDiscount";
 
 export default function calculateCartItemPrice(item: CartItem): CartPrice {
     const gross_price = calculateGrossPrice(item.product);
+
     if (item.product.discount.isEnabled) {
       const gross_price_discounted = calculatePriceAfterDiscount(
         gross_price,
